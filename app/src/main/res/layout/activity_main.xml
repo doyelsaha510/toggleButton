@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+    <com.google.android.material.button.MaterialButtonToggleGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toggle_button_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        tools:ignore="RedundantNamespace">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn1"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="work"
+            app:rippleColor="@color/colorPrimaryDark"
+            app:strokeWidth="2dp"
+            tools:ignore="PrivateResource"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn2"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="home"
+            app:strokeWidth="2dp"
+            tools:ignore="PrivateResource"
+            app:rippleColor="@color/colorPrimaryDark"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn3"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="others"
+            app:strokeWidth="2dp"
+            tools:ignore="PrivateResource"
+            app:rippleColor="@color/colorPrimaryDark"/>
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+</RelativeLayout>
