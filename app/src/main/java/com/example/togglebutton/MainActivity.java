@@ -5,16 +5,18 @@ import androidx.core.content.ContextCompat;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.button.MaterialButtonToggleGroup;
+import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
 public class MainActivity extends AppCompatActivity {
 
     MaterialButtonToggleGroup materialButtonToggleGroup;
     MaterialButton work,home,others;
-
+    String[] SPINNERLIST = {"Lunch", "Dinner"};
 
 
 
@@ -48,6 +50,11 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "clicked others", Toast.LENGTH_SHORT).show();
             }
         });
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_dropdown_item_1line, SPINNERLIST);
+        MaterialBetterSpinner materialDesignSpinner = (MaterialBetterSpinner)
+                findViewById(R.id.android_material_design_spinner);
+        materialDesignSpinner.setAdapter(arrayAdapter);
 
     }
 }

@@ -46,5 +46,14 @@
             app:rippleColor="@color/colorPrimaryDark"/>
 
     </com.google.android.material.button.MaterialButtonToggleGroup>
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/android_material_design_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="choose food"
+        android:textColorHint="#05ab9a"
+        app:met_floatingLabel="highlight"
+        android:layout_below="@+id/toggle_button_group"
+        />
 
 </RelativeLayout>
